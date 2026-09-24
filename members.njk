@@ -1,0 +1,42 @@
+---
+layout: layouts/base.njk
+title: "メンバー紹介"
+description: "教員・学生一覧"
+---
+<div class="page-heading container">
+  <h1>メンバー紹介</h1>
+  <p>{{ site.labName }}に所属する教員・学生を紹介します（学年は年度時点のものです）。</p>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="member-group">
+      <h2 class="section__heading">教員</h2>
+      <div class="card-grid">
+        {% for person in members.faculty %}
+        <div class="card member-card">
+          <img class="member-card__photo" src="{{ person.photo }}" alt="">
+          <span class="member-card__role">{{ person.role }}</span>
+          <p class="member-card__name">{{ person.name }}</p>
+          <p class="member-card__theme">{{ person.field }}</p>
+          <p class="member-card__theme">{{ person.bio }}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="member-group">
+      <h2 class="section__heading">学生</h2>
+      <div class="card-grid">
+        {% for person in members.students %}
+        <div class="card member-card">
+          <img class="member-card__photo" src="{{ person.photo }}" alt="">
+          <span class="member-card__role">{{ person.grade }}</span>
+          <p class="member-card__name">{{ person.name }}</p>
+          <p class="member-card__theme">研究テーマ：{{ person.theme }}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

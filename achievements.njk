@@ -1,0 +1,52 @@
+---
+layout: layouts/base.njk
+title: "業績・実績"
+description: "論文・学会発表・受賞のリスト"
+---
+<div class="page-heading container">
+  <h1>業績・実績</h1>
+  <p>研究室メンバーによる論文・学会発表・受賞歴を紹介します。</p>
+</div>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section__heading">論文</h2>
+    <ul class="achievement-list">
+      {% for item in achievements.papers %}
+      <li>
+        <span class="achievement-list__year">{{ item.year }}</span>
+        <div>
+          <p class="achievement-list__title">{{ item.title }}</p>
+          <p class="achievement-list__meta">{{ item.authors }}／{{ item.venue }}</p>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+
+    <h2 class="section__heading">学会発表</h2>
+    <ul class="achievement-list">
+      {% for item in achievements.presentations %}
+      <li>
+        <span class="achievement-list__year">{{ item.year }}</span>
+        <div>
+          <p class="achievement-list__title">{{ item.title }}</p>
+          <p class="achievement-list__meta">{{ item.authors }}／{{ item.venue }}</p>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+
+    <h2 class="section__heading">受賞</h2>
+    <ul class="achievement-list">
+      {% for item in achievements.awards %}
+      <li>
+        <span class="achievement-list__year">{{ item.year }}</span>
+        <div>
+          <p class="achievement-list__title">{{ item.title }}</p>
+          <p class="achievement-list__meta">{{ item.recipient }}／{{ item.organization }}</p>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

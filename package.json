@@ -1,0 +1,16 @@
+{
+  "name": "lab-website",
+  "version": "1.0.0",
+  "description": "CG/VR/AI研究室 公式サイト（Eleventy製・静的サイト）",
+  "private": true,
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "serve": "npx @11ty/eleventy --serve"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}

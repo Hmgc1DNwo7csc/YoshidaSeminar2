@@ -1,0 +1,26 @@
+---
+layout: layouts/base.njk
+title: "研究内容"
+description: "CG・VR・AIを組み合わせた研究テーマの紹介"
+---
+<div class="page-heading container">
+  <h1>研究内容</h1>
+  <p>CG（コンピュータグラフィックス）を基盤に、VR・AI技術を組み合わせた研究テーマに取り組んでいます。</p>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="card-grid">
+      {% for item in research %}
+      <article class="card">
+        <img class="card__image" src="{{ item.image }}" alt="">
+        <div class="card__body">
+          <span class="card__badge">{{ item.category }}</span>
+          <h2 class="card__title">{{ item.title }}</h2>
+          <p class="card__text">{{ item.description }}</p>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
