@@ -1,0 +1,5 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="プロフィール写真プレースホルダー">
+  <rect width="200" height="200" fill="#eef1f6"/>
+  <circle cx="100" cy="78" r="34" fill="#c7ccd6"/>
+  <path d="M36 172c0-42 28-68 64-68s64 26 64 68z" fill="#c7ccd6"/>
+</svg>

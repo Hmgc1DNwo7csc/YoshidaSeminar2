@@ -1,0 +1,5 @@
+<svg viewBox="0 0 400 225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="CG研究テーマ">
+  <rect width="400" height="225" fill="#1a2b4c"/>
+  <text x="30" y="120" font-family="sans-serif" font-size="56" font-weight="700" fill="#ffffff">CG</text>
+  <text x="30" y="155" font-family="sans-serif" font-size="18" fill="#c7ccd6">Computer Graphics</text>
+</svg>
